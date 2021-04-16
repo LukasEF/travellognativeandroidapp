@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travellogapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/appicon_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.travellogapp.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.travellogapp.CountriesActivity"
+            android:label="Countries"
+            android:parentActivityName="com.example.travellogapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.travellogapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.travellogapp.CountryDetails"
+            android:label="CountryDetails"
+            android:parentActivityName="com.example.travellogapp.CountriesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.travellogapp.CountriesActivity" />
+        </activity>
+        <activity
+            android:name="com.example.travellogapp.PastTravelsActivity"
+            android:label="Past Travels"
+            android:parentActivityName="com.example.travellogapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.travellogapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.travellogapp.TakePhoto"
+            android:label="Take Photo"
+            android:parentActivityName="com.example.travellogapp.CountryDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.travellogapp.CountryDetails" />
+        </activity>
+        <activity
+            android:name="com.example.travellogapp.ViewPhotos"
+            android:label="View Photos"
+            android:parentActivityName="com.example.travellogapp.CountryDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.travellogapp.CountryDetails" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.travellogapp.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>
