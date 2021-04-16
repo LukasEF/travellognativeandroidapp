@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Travel Log App</string>
+    <string name="travel_logger">Travel Logger</string>
+    <string name="txt_countries">Countries</string>
+    <string name="txt_pastTravels">Past Travels</string>
+    <string name="str_country_name">COUNTRY NAME</string>
+    <string name="str_country_capital">COUNTRY CAPITAL</string>
+    <string name="str_country_region">COUNTRY REGION</string>
+    <string name="str_country_population">COUNTRY POPULATION</string>
+    <string name="str_country_currencies">COUNTRY CURRENCIES</string>
+    <string name="str_country_languages">COUNTRY LANGUAGES</string>
+    <string name="str_btn_mark_as_travelled">Mark as Travelled</string>
+    <string name="str_country_timezones">COUNTRY TIMEZONES</string>
+    <string name="str_take_photo">Take photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="str_view_photos">View Photos</string>
+</resources>

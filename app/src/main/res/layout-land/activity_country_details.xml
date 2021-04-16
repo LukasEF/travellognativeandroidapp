@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CountryDetails">
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="721dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/str_country_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="159dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+    <TextView
+        android:id="@+id/countryCapital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="416dp"
+        android:gravity="center"
+        android:text="@string/str_country_capital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+    <TextView
+        android:id="@+id/countryRegion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="420dp"
+        android:gravity="center"
+        android:text="@string/str_country_region"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryCapital" />
+
+    <TextView
+        android:id="@+id/countryPopulation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="388dp"
+        android:gravity="center"
+        android:text="@string/str_country_population"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryRegion" />
+
+    <TextView
+        android:id="@+id/countryCurrencies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="388dp"
+        android:gravity="center"
+        android:text="@string/str_country_currencies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryPopulation" />
+
+    <TextView
+        android:id="@+id/countryLanguages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="392dp"
+        android:gravity="center"
+        android:text="@string/str_country_languages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryCurrencies" />
+
+    <TextView
+        android:id="@+id/countryTimezones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="396dp"
+        android:gravity="center"
+        android:text="@string/str_country_timezones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@+id/countryLanguages" />
+
+    <Button
+        android:id="@+id/btnAPI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/str_btn_mark_as_travelled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryTimezones"></Button>
+
+    <ImageButton
+        android:id="@+id/btn_wiki"
+        android:layout_width="97dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/wikipedia" />
+
+    <ImageButton
+        android:id="@+id/btn_star4"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="120dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/btn_star2"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="336dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/btn_star1"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="444dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/btn_star3"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="228dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/btn_star5"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAPI"
+        app:srcCompat="@drawable/star" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

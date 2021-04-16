@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_Plane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/plane" />
+
+    <TextView
+        android:id="@+id/txt_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_light"
+        android:gravity="center"
+        android:text="@string/travel_logger"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_startCountriesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/txt_countries" />
+
+    <Button
+        android:id="@+id/btn_startPastTravelsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/txt_pastTravels" />
+
+    <ImageButton
+        android:id="@+id/btn_darkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        app:srcCompat="@drawable/moon" />
+
+    <ImageButton
+        android:id="@+id/btn_lightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        app:srcCompat="@drawable/sun" />
+
+</LinearLayout>
